@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Student mark predictor</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='templatemo-grad-school.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='owl.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lightbox.css')}}">
+
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Mark</em> Predictor</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Predict</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="static/course-video.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Machine learning project</h6>
+              <h2>Student mark <em>predictor</em> </h2>
+              <div class="main-button">
+                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>Model Used</h4>
+              </div>
+              <div class="content-hide">
+                <p>In this project we used Linear Regression Algorithm.</p>
+                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Front-end</h4>
+              </div>
+              <div class="content-hide">
+                <p>Languages used are HTML,CSS,Bootstrap,Javascript And python Flask.</p>
+                <div class="scroll-to-section"><a href="#section2">Details</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Python Libraries</h4>
+              </div>
+              <div class="content-hide">
+                <p>Libraries used are pandas, numpy, matplotlib, seaborn,sklearn, pickle, etc.</p>
+                <div class="scroll-to-section"><a href="#section2">Read More</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why this model is build?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Stress Management</a></li>
+              <li><a href='#tabs-2'>Time Management</a></li>
+              <li><a href='#tabs-3'>Quality study</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{{url_for('static', filename='choose-us-image-01.png')}}" alt=""  />
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Stress Management </h4>
+                    <p>Stress is common among students, and it can cause adverse mental and physical side effects if left unaddressed.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                      <img src="{{url_for('static', filename='choose-us-image-02.png')}}" alt=""  />
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Time Management</h4>
+                    <p>Time management is the process of planning and exercising conscious control of time spent on specific activities, especially to increase effectiveness, efficiency, and productivity.</p> 
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                      <img src="{{url_for('static', filename='choose-us-image-03.png')}}" alt=""  />
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Quality Study</h4>
+                    <p>. The systematic investigation into and study of materials. and sources in order to establish facts and reach new.</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="right-content" style="align-content: center;align-items: center;color: white;">
+            <div class="top-content">
+              <h6>Student Mark Predictor</h6>
+            </div>
+                    <form id="contact" action="/" method="post">
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="hours" type="text" class="form-control"  placeholder="Enter hours of study"  required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button">Submit</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+              <br>
+              {% if your_marks %}
+            <h2>Your marks are : <i> {{ your_marks}} </i></h2>
+        {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{{url_for('static', filename='jquery.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js.js')}}"></script>
+    
+
+    <script src="{{url_for('static', filename='isotope.min.js')}}"></script>
+    <script src="{{url_for('static', filename='owl-carousel.js')}}"></script>
+    <script src="{{url_for('static', filename='lightbox.js')}}"></script>
+    <script src="{{url_for('static', filename='tabs.js')}}"></script>
+    <script src="{{url_for('static', filename='video.js')}}"></script>
+    <script src="{{url_for('static', filename='slick-slider.js')}}"></script>
+    <script src="{{url_for('static', filename='custom.js')}}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>
